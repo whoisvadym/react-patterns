@@ -6,8 +6,8 @@ This repository represents my understanding (and my own examples) of [Advanced R
 
 Following patterns that are already implemented here:
 
--   [React Context API Pattern](react-patterns/blob/master/patterns/context.jsx)
--   [Render-Props Pattern](react-patterns/blob/master/patterns/render-props.jsx)
+-   [React Context API Pattern](https://github.com/pewstiepoll/react-patterns/blob/master/patterns/context.jsx)
+-   [Render-Props Pattern](https://github.com/pewstiepoll/react-patterns/blob/master/patterns/render-props.jsx)
 
 ## TODO
 

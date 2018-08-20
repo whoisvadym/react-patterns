@@ -6,9 +6,9 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
+    "keywords": ["react", "patterns", "react-patterns", "react-context", "advanced-react-patters"],
+    "author": "Vadym Zelenin",
+    "license": "MIT",
     "dependencies": {
         "prop-types": "^15.6.2",
         "react": "^16.4.2",
