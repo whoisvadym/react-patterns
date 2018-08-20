@@ -11,8 +11,8 @@ Following patterns that are already implemented here:
 
 ## TODO
 
--   Add CHANGELOG.md [ ]
--   Add Usage component for "context" patter [ ]
+-   Add CHANGELOG.md [x]
+-   Add Usage component for "context" patter [x]
 -   Add es-lint [ ]
 -   Implement "state-initialize patter" [ ]
 -   Implement "state reducer" [ ]

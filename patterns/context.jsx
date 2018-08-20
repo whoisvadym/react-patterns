@@ -37,66 +37,81 @@ const CheckBoxContext = React.createContext();
 
 // Create HOC that helps create checkbox context consumers
 function CheckBoxConsumer(props) {
-    return (
-        <CheckBoxContext.Consumer>
-            {context => {
-                // Throw an error if required context was not found to make sure we render context consumers
-                // only within context provider e.g. within <Checkbox></Checkbox>
-                if (!context) throw new Error("CheckboxContextConsumer was rendered outside of it's provider");
-                props.children(context);
-            }}
-        </CheckBoxContext.Consumer>
-    );
+  return (
+    <CheckBoxContext.Consumer>
+      {context => {
+        // Throw an error if required context was not found to make sure we render context consumers
+        // only within context provider e.g. within <Checkbox></Checkbox>
+        if (!context)
+          throw new Error(
+            "CheckboxContextConsumer was rendered outside of it's provider"
+          );
+        return props.children(context);
+      }}
+    </CheckBoxContext.Consumer>
+  );
 }
 
 export default class Checkbox extends Component {
-    // <Checkbox.On> component will render its children only if checkbox is checked
-    static On = function({ children }) {
-        return (
-            <CheckBoxConsumer>
-                {({ checked }) => {
-                    checked ? children : null;
-                }}
-            </CheckBoxConsumer>
-        );
-    };
+  // <Checkbox.On> component will render its children only if checkbox is checked
+  static On = function({ children }) {
+    return (
+      <CheckBoxConsumer>
+        {({ checked }) => (checked ? children : null)}
+      </CheckBoxConsumer>
+    );
+  };
 
-    // <Checkbox.Off> component will render its children only if checkbox is unchecked
-    static Off = function({ children }) {
-        return (
-            <CheckBoxConsumer>
-                {({ checked }) => {
-                    checked ? null : children;
-                }}
-            </CheckBoxConsumer>
-        );
-    };
+  // <Checkbox.Off> component will render its children only if checkbox is unchecked
+  static Off = function({ children }) {
+    return (
+      <CheckBoxConsumer>
+        {({ checked }) => (checked ? null : children)}
+      </CheckBoxConsumer>
+    );
+  };
 
-    // <Checkbox.Button> component is toggling Checkbox state on|off
-    static Button = function() {
-        return (
-            <CheckBoxConsumer>
-                {({ check }) => {
-                    <button onClick={check}>Check</button>;
-                }}
-            </CheckBoxConsumer>
-        );
-    };
+  // <Checkbox.Button> component is toggling Checkbox state on|off
+  static Button = function() {
+    return (
+      <CheckBoxConsumer>
+        {({ check }) => <button onClick={check}>Check</button>}
+      </CheckBoxConsumer>
+    );
+  };
 
-    state = {
-        checked: false,
-        check: this.check
-    };
+  state = {
+    checked: false,
+    check: this.check.bind(this)
+  };
 
-    check() {
-        this.setState(
-            ({ checked }) => ({ checked: !checked }),
-            () => {
-                this.props.onCheck(this.state.checked);
-            }
-        );
-    }
-    render() {
-        return <CheckBoxContext.Provider value={this.state}>{this.props.children}</CheckBoxContext.Provider>;
-    }
+  check() {
+    this.setState(
+      ({ checked }) => ({ checked: !checked }),
+      () => {
+        this.props.onCheck(this.state.checked);
+      }
+    );
+  }
+  render() {
+    return (
+      <CheckBoxContext.Provider value={this.state}>
+        {this.props.children}
+      </CheckBoxContext.Provider>
+    );
+  }
+}
+
+export function Usage({
+  onCheck = () => {
+    console.log("checked");
+  }
+}) {
+  return (
+    <Checkbox onCheck={onCheck}>
+      <Checkbox.On>ON</Checkbox.On>
+      <Checkbox.Off>OFF</Checkbox.Off>
+      <Checkbox.Button />
+    </Checkbox>
+  );
 }
