@@ -11,7 +11,12 @@ Following patterns that are already implemented here:
 
 ## TODO
 
+-   Add CHANGELOG.md [ ]
+-   Add Usage component for "context" patter [ ]
+-   Add es-lint [ ]
 -   Implement "state-initialize patter" [ ]
 -   Implement "state reducer" [ ]
 -   Implement "control props" [ ]
 -   Implement "provider pattern" [ ]
+-   Add examples [ ]
+-   Add tests [ ]
