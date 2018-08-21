@@ -58,6 +58,7 @@ function CheckBoxConsumer(props) {
   );
 }
 
+// CheckBoxConsumer expects to receive function as a child
 CheckBoxConsumer.defaultProps = {
   children: () => {},
 };
