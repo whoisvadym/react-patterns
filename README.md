@@ -14,7 +14,7 @@ Following patterns that are already implemented here:
 -   Add CHANGELOG.md [x]
 -   Add Usage component for "context" patter [x]
 -   Add es-lint [x]
--   Implement "state-initialize pattern" [ ]
+-   Implement "state-initialize pattern" [x]
 -   Implement "state reducer" [ ]
 -   Implement "control props" [ ]
 -   Implement "provider pattern" [ ]
