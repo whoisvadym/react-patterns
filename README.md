@@ -15,7 +15,7 @@ Following patterns that are already implemented here:
 -   Add Usage component for "context" patter [x]
 -   Add es-lint [x]
 -   Implement "state-initialize pattern" [x]
--   Implement "state reducer" [ ]
+-   Implement "state reducer" [x]
 -   Implement "control props" [ ]
 -   Implement "provider pattern" [ ]
 -   Add examples [ ]
