@@ -24,8 +24,9 @@ Following patterns that are already implemented here:
 -   Implement "state reducer" [x]
 -   Implement "controlled props" [x]
 -   Implement "provider pattern" [x]
--   Implement "HOC" pattern [ ]
--   Add examples [ ]
+-   Implement "HOC" pattern [x]
+-   Add beautiful checkbox component [ ]
+-   Add examples with react-storybook [ ]
 -   Add tests [ ]
 
 ## License
