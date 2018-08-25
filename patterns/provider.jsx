@@ -118,6 +118,11 @@ const Layer3 = () => (
 
 const Span = ({ color, children }) => <span style={{ color }}>{children}</span>;
 
+Span.propTypes = {
+  color: PropTypes.string.isRequired,
+  children: PropTypes.oneOfType([PropTypes.node, PropTypes.string]).isRequired,
+};
+
 export function Usage({
   handleCheck = (...args) => { console.log('onCheck... ', ...args); },
 }) {
