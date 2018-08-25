@@ -6,8 +6,11 @@ This repository represents my understanding (and my own examples) of [Advanced R
 
 Following patterns that are already implemented here:
 
--   [React Context API Pattern](https://github.com/pewstiepoll/react-patterns/blob/master/patterns/context.jsx)
--   [Render-Props Pattern](https://github.com/pewstiepoll/react-patterns/blob/master/patterns/render-props.jsx)
+-   [React Context API Pattern](/patterns/context.jsx)
+-   [Render-Props Pattern](/patterns/render-props.jsx)
+-   [State Initializer Pattern](/patterns/state-initializer.jsx)
+-   [State Reducer Pattern](/patterns/state-reducer.jsx)
+-   [Controlled Props Pattern](/patterns/controlled-props.jsx)
 
 ## TODO
 
@@ -16,7 +19,7 @@ Following patterns that are already implemented here:
 -   Add es-lint [x]
 -   Implement "state-initialize pattern" [x]
 -   Implement "state reducer" [x]
--   Implement "control props" [ ]
+-   Implement "controlled props" [x]
 -   Implement "provider pattern" [ ]
 -   Add examples [ ]
 -   Add tests [ ]

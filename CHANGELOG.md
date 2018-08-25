@@ -4,6 +4,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [1.5.0] - 2018-08-25
+### Added
+ - Added `Controlled Props pattern`: [link](./patterns/controlled-props.jsx)
+ - Added more links to patterns in [README.MD](./README.md#L11)
+
+### Changed
+ - Moved eslint rules disablers to [.eslintrc.json](/.eslintrc.json#L6)
+ - Changed absolute pathes to patterns to relative ones
+
 ## [1.4.0] - 2018-08-24
 ### Added
  - Added `State reducer` pattern and example
