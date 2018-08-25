@@ -112,7 +112,7 @@ export default class Checkbox extends Component {
         // pass current state and incomming changes to a stateReducer
         const reducedChanges = stateReducer(state, changesObject) || {};
 
-        // extract all changes but type related to avoid unnessessary rerendering
+        // extract all changes but type related to avoid unecessary rerendering
         const { type, ...onlyChanges } = reducedChanges;
 
         // prevent re-renders if there's no changes made

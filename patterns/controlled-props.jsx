@@ -75,7 +75,7 @@ export default class Checkbox extends Component {
         }, {},
       );
 
-      // prevent unnessessary rerenders by returning null if there were no uncontrolled changes
+      // prevent unecessary rerenders by returning null if there were no uncontrolled changes
       return Object.keys(nonControlledChanges).length ? nonControlledChanges : null;
     },
     () => {
