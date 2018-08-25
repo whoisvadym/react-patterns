@@ -23,7 +23,8 @@ Following patterns that are already implemented here:
 -   Implement "state-initialize pattern" [x]
 -   Implement "state reducer" [x]
 -   Implement "controlled props" [x]
--   Implement "provider pattern" [ ]
+-   Implement "provider pattern" [x]
+-   Implement "HOC" pattern [ ]
 -   Add examples [ ]
 -   Add tests [ ]
 
