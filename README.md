@@ -12,6 +12,9 @@ Following patterns that are already implemented here:
 -   [State Reducer Pattern](/patterns/state-reducer.jsx)
 -   [Controlled Props Pattern](/patterns/controlled-props.jsx)
 
+## Changelog
+ [Project changelog link](/CHANGELOG.md)
+
 ## TODO
 
 -   Add CHANGELOG.md [x]
@@ -23,3 +26,6 @@ Following patterns that are already implemented here:
 -   Implement "provider pattern" [ ]
 -   Add examples [ ]
 -   Add tests [ ]
+
+## License
+MIT License is applied to this project: [Link](/LICENSE)
