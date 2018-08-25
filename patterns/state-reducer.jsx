@@ -43,7 +43,7 @@ export default class Checkbox extends Component {
     // in order to avoid duplication
     // all initial values for state are stored in the variable
     initialState = {
-      checked: this.props.initialChecked, // eslint-disable-line react/destructuring-assignment
+      checked: this.props.initialChecked,
     }
 
     // assign state to its initial value

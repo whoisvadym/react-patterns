@@ -2,6 +2,7 @@
     "extends": "airbnb",
     "parser": "babel-eslint",
     "rules": {
-        "react/no-unused-state": "false"
+        "react/no-unused-state": "false",
+        "react/destructuring-assignment": "false"
     }
 }
